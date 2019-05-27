@@ -10,12 +10,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("app/public"));
 
 // static directory
-app.use(express.static("app/puclic"));
+app.use(express.static("app/public"));
 
 
 // Routes
-// require("./routes/api-routes.js")(app);
-
+require("./routes/api-routes.js")(app);
 
 // starts the server to begin listening.
 db.sequelize.sync().then(function () {
