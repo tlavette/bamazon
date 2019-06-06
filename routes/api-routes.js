@@ -7,8 +7,8 @@ var db = require("../models");
 
 // Routes
 module.exports = function(app){
-app.get("/api/bamazon", function(req, res){
-    db.bamazon.findAll({}).then(function(dbProduct){
+app.get("/api/products", function(req, res){
+    db.Product.findAll({}).then(function(dbProduct){
 
         res.json(dbProduct);
     });
