@@ -31,6 +31,13 @@ const products =[
         "price": 32,
         "stock_quantity": 160
     },
+    {
+        "product_name": "Womens Tank Top",
+        "department_name": "Womens Apparel",
+        "price": 16,
+        "stock_quantity": 230
+    },
+
 ];
 
 

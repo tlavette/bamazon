@@ -2,30 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bamazon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bamazon</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  
-    
-    <!-- css path -->
-   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+
+  <!-- css path -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
- 
-        <!-- centered text -->
-        <div class="container-fluid">
-        <h1 class="text-center"><strong>BAMAZON ORDER FORM</strong></h1>
-        <img src="css/kisspngshopping.png" class="img-fluid" style="max-height:400px" padding="10px">
-    
-    </div>
+
+  <!-- centered text -->
+  <!-- <div class="container-fluid"> -->
+  <h1 class="text-center"><strong>BAMAZON ORDER FORM</strong></h1>
+  <div class="card">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <img src="css/kisspngshopping.png" class="img-fluid" style="max-height:400px" padding="10px">
+        </div>
+        <div class="col-9">
+          <h2 class="text-center">Purchase Order Form</h2>
+          <br>
+          <br>
+          <table id="itemList">
+            <thead>
+              <tr>
+                <th id="Product">Product</th>
+                <th id="Price">Price</th>
+                <th id="Department">Department</th>
+                <th id="Quantity">QTY</th>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="inputQuantity" class="form-control" id="inputQuantity" placeholder="QTY">
+                      </div></form>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- results from database presented here -->
+            </tbody>
+          </table>
+          <script src="js/app.js"></script>
+  </body>
+</html>
 
 
+
+
+
+
+
+
+<!-- <img src="css/kisspngshopping.png" class="img-fluid" style="max-height:400px" padding="10px">
+  </div>
+  
     <div class="container-fluid">
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="exampleFormControlSelect1">Product Selection</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Women's Sport Tee</option>
+                  <option>Men's Sport Tee</option>
+                  <option>Pocket Shorts</option>
+                  <option>VitaShake Protien</option>
+                  <option>VitaShake Bars</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+      </form>
+      <form>
+        <div class="form-group">
+          <div class="col-sm-1">
+            <label for="quantity">Quantity</label>
+            <input type="inputQuantity" class="form-control" id="inputQuantity" placeholder="QTY">
+          </div>
+        </div>
+        <form>
+          <div class="form-group">
+            <div class="col-sm-1">
+              <label for="price">Price</label>
+              <input type="" class="form-control" id="inputQuantity" placeholder="Price">
+            </div>
+          </div>
+    </div>
+  </div>
+  </form>
+
+
+ -->
+
+
+
+
+
+
+
+<!-- <div class="container-fluid">
         <div class="row">
             <div class="col-sm-6">Product Name</div>
             <div class="col-sm-2">Price</div>
@@ -238,7 +326,7 @@
                             <option value="2">10</option>
                           </select>
                         </div>
-        
+         -->
 
 
 </body>

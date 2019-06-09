@@ -6,29 +6,35 @@
 var db = require("../models");
 
 // Routes
-module.exports = function(app){
-app.get("/api/products", function(req, res){
-    db.Product.findAll({}).then(function(dbProduct){
+module.exports = function (app) {
+    app.get("/api/products", function (req, res) {
+        db.Product.findAll({}).then(function (error, dbProduct) {
 
-        res.json(dbProduct);
+            if (error) {
+                console.log(error);
+            }
+            else {
+                res.json(dbProduct);
+            }
+
+        });
+
     });
 
-});
 
+    // Post route for saving a new Product
+    app.post("/api/products", function (req, res) {
+        console.log(req.body);
 
-// POSt route for saving a new Product
-app.post("/api/products", function(req, res) {
-    console.log(req.body);
-
-    db.Product.create({
-        product_name: req.body.product_name,
-        department_name: req.body.department_name,
-        price:req.body.price,
-        stock_quantity:req.body.stock_quantity
-    }).then(function(dbProduct) {
-        // access the bamazon 
-        res.json(dbProduct);
+        db.Product.create({
+            product_name: req.body.product_name,
+            department_name: req.body.department_name,
+            price: req.body.price,
+            stock_quantity: req.body.stock_quantity
+        }).then(function (dbProduct) {
+            // access the bamazon 
+            res.json(dbProduct);
+        });
     });
-});
 
 }

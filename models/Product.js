@@ -18,7 +18,6 @@ module.exports = function (sequelize, DataTypes) {
             }
 
         },
-        // price: {Sequelize.DECIMAL(10, 2)
         price: {
             type: DataTypes.DECIMAL(10, 2)
             // isNumeric: true,
