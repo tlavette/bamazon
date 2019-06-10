@@ -8,17 +8,12 @@ var db = require("../models");
 // Routes
 module.exports = function (app) {
     app.get("/api/products", function (req, res) {
-        db.Product.findAll({}).then(function (error, dbProduct) {
-
-            if (error) {
-                console.log(error);
-            }
-            else {
-                res.json(dbProduct);
-            }
-
+        db.Product.findAll({})
+        .then(function (products) {
+            res.json(products)
+        }).catch(function (error) {
+            res.json({ error: err })
         });
-
     });
 
 

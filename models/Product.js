@@ -20,12 +20,7 @@ module.exports = function (sequelize, DataTypes) {
         },
         price: {
             type: DataTypes.DECIMAL(10, 2)
-            // isNumeric: true,
-
-            // validate: {
-            //     len:[1,5]
-            // }
-
+        
         },
         stock_quantity: {
             type: DataTypes.INTEGER,
