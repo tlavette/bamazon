@@ -22,7 +22,7 @@ else
 a - b = stock, (updat stock)
 (console.log: Your order is process)
 
-![databasenode](/public/css/databaseNode.png)
+![databasenode](/public/css/databaseNodejs.png)
 
 
 ![index](/public/css/indexview.png)
