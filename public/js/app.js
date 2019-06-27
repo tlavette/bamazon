@@ -19,7 +19,8 @@ const displayProducts = function (products) {
             $("<td>").text(product.product_name),
             $("<td>").text(product.department_name),
             $("<td>").text(product.price),
-            $("<td>").text(product.stock_quantity)
+            $("<td>").text(product.stock_quantity),
+            
         );
         $("#results").append(tr);
     });

@@ -32,4 +32,7 @@ module.exports = function (app) {
         });
     });
 
+    // post route to receive qty from customer to check db for availability
+    
+
 }
